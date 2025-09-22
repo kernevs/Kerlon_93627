@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Inscrição</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 16px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .checkbox-group label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inscrição para o Evento</h1>
+
+    <form action="#" method="post">
+        <!-- Informações Pessoais -->
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+
+        <!-- Preferências -->
+        <label for="categoria">Categoria de participação:</label>
+        <select id="categoria" name="categoria">
+            <option value="participante">Participante</option>
+            <option value="palestrante">Palestrante</option>
+            <option value="voluntario">Voluntário</option>
+        </select>
+
+        <label>Preferências de contato:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="contato_email" checked> E-mail</label>
+            <label><input type="checkbox" name="contato_whatsapp"> WhatsApp</label>
+            <label><input type="checkbox" name="contato_sms"> SMS</label>
+        </div>
+
+        <label for="mensagem">Mensagem adicional (opcional):</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui alguma dúvida ou sugestão..."></textarea>
+
+        <input type="submit" value="Enviar Inscrição">
+    </form>
+
+</body>
+</html>

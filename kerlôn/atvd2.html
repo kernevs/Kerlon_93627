@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 9px 16px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Estilo para tarefa concluída com checkbox marcada */
+        input[type="checkbox"]:checked + span {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Título da Página -->
+    <h1>Minhas Tarefas</h1>
+
+    <!-- 2. Campo de Entrada e Botão -->
+    <form>
+        <label for="novaTarefa">Digite uma nova tarefa:</label>
+        <input type="text" id="novaTarefa" name="novaTarefa" placeholder="Ex: Estudar HTML">
+        <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <!-- 3. Lista de Tarefas -->
+    <ol>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Aprender HTML</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Praticar CSS</span>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox">
+                <span>Estudar lógica de programação</span>
+            </label>
+        </li>
+    </ol>
+
+</body>
+</html>
