@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop - Home</title>
+    
+    <style>
+        /* RESET BÁSICO */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Fundo leve para o restante da página */
+        }
+
+        /* --- CABEÇALHO SUPERIOR E NAVEGAÇÃO (Seção Amarela) --- */
+        .cabecalho-principal {
+            background-color: #ffd700; /* Amarelo similar ao da imagem */
+            padding: 10px 0 5px 0; 
+            text-align: center;
+        }
+
+        .logo-container {
+            display: block; 
+            text-align: center;
+            padding-bottom: 10px; 
+        }
+
+        /* LOGO MAXIMIZADO */
+        .logo {
+            width: 120px; /* AUMENTAMOS O TAMANHO DO LOGO (de 80px para 120px) */
+            height: auto;
+            display: block; 
+            margin: 0 auto 5px; 
+        }
+
+        .cabecalho-principal h1 {
+            font-size: 1.5em;
+            color: #333; 
+            letter-spacing: 2px;
+        }
+
+
+        /* --- BARRA DE NAVEGAÇÃO DENTRO DO AMARELO --- */
+        .menu-principal {
+            background-color: transparent; 
+            padding: 5px 0;
+        }
+
+        .menu-principal ul {
+            list-style: none; 
+            padding: 0;
+            display: flex; 
+            justify-content: center;
+        }
+
+        .menu-principal li {
+            margin: 0 20px;
+        }
+
+        .menu-principal a {
+            text-decoration: none; 
+            color: #333; 
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        /* EFEITO AO PASSAR O MOUSE (AZUL CLARO) */
+        .menu-principal a:hover {
+            color: #87cefa; 
+        }
+
+        /* --- LINHA DIVISÓRIA (Traço laranja) --- */
+        .linha-divisoria {
+            height: 3px; /* Altura da linha */
+            background-color: #ff7f50; /* Cor Laranja */
+            width: 100%; 
+        }
+
+        /* --- SEÇÃO PRINCIPAL (Boas-vindas com a FOTO GRANDE) --- */
+        .secao-boas-vindas {
+            /* Define a imagem de fundo - Garanta que o nome do arquivo esteja correto! */
+            background-image: url('img1.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 85vh; 
+            display: flex;
+            align-items: center; 
+            justify-content: flex-start; 
+            text-align: left;
+            padding-left: 10%; 
+        }
+
+        .conteudo-boas-vindas {
+            color: #fff; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            max-width: 50%; 
+        }
+
+        .titulo-menor {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .conteudo-boas-vindas h2 {
+            font-size: 3.5em;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+            color: #fffacd; 
+        }
+
+        .slogan {
+            font-style: italic;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho-principal">
+        <div class="logo-container">
+            <img src="pet-logo.jpg" alt="Logo Pet Shop" class="logo">
+            <h1>PET SHOP</h1>
+        </div>
+        
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="linha-divisoria"></div>
+
+    <main class="secao-boas-vindas">
+        
+        <div class="conteudo-boas-vindas">
+            <p class="titulo-menor">Bem-vindo ao Pet Shop</p>
+            <h2>Alegria Animal</h2>
+            <p class="slogan">Seu pet tratado com amor e carinho!</p>
+        </div>
+    </main>
+
+</body>
+</html>
