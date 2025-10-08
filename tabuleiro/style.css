@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+    margin: 0;
+}
+
+.tabuleiro {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+}
+
+.linha {
+    display: flex;
+    flex: 1;
+}
+
+.quadrado {
+    width: 50px;
+    height: 50px;
+}
+
+.preto {
+    background-color: black;
+}
+
+.branco {
+    background-color: white;
+}
