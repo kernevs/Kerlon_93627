@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de CNPJ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Formulário de consulta de CNPJ -->
+    <div class="formulario">
+      <h2>Consulta de CNPJ</h2>
+      <label for="cnpj">CNPJ:</label>
+      <input type="text" id="cnpj" placeholder="Digite o CNPJ" maxlength="14">
+      <button id="consultar">Consultar</button>
+
+      <!-- Resultado da consulta -->
+      <div class="resultado">
+        <p><strong>Razão Social:</strong> <span id="razao">-</span></p>
+        <p><strong>Nome Fantasia:</strong> <span id="fantasia">-</span></p>
+        <p><strong>Atividade Principal:</strong> <span id="atividade">-</span></p>
+        <p><strong>Endereço:</strong> <span id="endereco">-</span></p>
+        <p><strong>Município:</strong> <span id="municipio">-</span></p>
+        <p><strong>UF:</strong> <span id="uf">-</span></p>
+        <p><strong>Situação Cadastral:</strong> <span id="situacao">-</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>

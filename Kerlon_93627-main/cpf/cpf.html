@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de CEP</title>      
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Formulário de consulta de CEP -->
+    <div class="formulario">
+      <h2>Consulta de CEP</h2>
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" placeholder="Digite o CEP" maxlength="8"> <!-- Campo para digitar o CEP -->
+      <button id="consultar">Consultar</button> <!-- Botão que chama a consulta do CEP -->
+
+      <!-- Resultado da consulta será mostrado aqui -->
+      <div class="resultado">
+        <p><strong>Rua:</strong> <span id="rua">-</span></p>
+        <p><strong>Bairro:</strong> <span id="bairro">-</span></p>
+        <p><strong>Cidade:</strong> <span id="cidade">-</span></p>
+        <p><strong>Estado:</strong> <span id="estado">-</span></p>
+      </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
