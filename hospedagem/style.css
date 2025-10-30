@@ -1,0 +1,239 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #093b47;
+  background-color: #fdfaf3;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #00455c;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.1em;
+}
+
+/* Seção de boas-vindas */
+.welcome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5e9d7;
+  padding: 60px 20px;
+}
+
+.welcome-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.welcome-text h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #093b47;
+}
+
+.welcome-image {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* Seção de destaques */
+.highlights {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.highlights h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #093b47;
+}
+
+.highlight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #f5e9d7;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2em;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 0.95em;
+}
+
+/* =====================
+   Seção de Contato
+===================== */
+.contact {
+  background-color: #00455c;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 40px;
+  font-size: 1em;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #a66c34;
+}
+
+.btn-send {
+  background-color: #a66c34;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-send:hover {
+  background-color: #8c5829;
+}
+
+/* WhatsApp */
+.contact-whatsapp {
+  text-align: left;
+  align-self: center;
+}
+
+.contact-whatsapp p {
+  margin-bottom: 10px;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  color: #00455c;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.whatsapp-btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-whatsapp {
+    text-align: center;
+  }
+}
+
+
+/* Rodapé */
+.footer {
+  background-color: #00455c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
